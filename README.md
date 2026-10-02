@@ -1,23 +1,25 @@
-# My Website
+# reynaldonikola.github.io
 
-This is a simple website created using HTML and CSS.
+My portfolio. Hand-written HTML, CSS and JavaScript, no framework and no build step.
 
-## Description
-This project is a basic static webpage that includes a homepage built with HTML and styled with CSS. It was created as a practice project to learn the fundamentals of web development.
+![Portfolio](preview.jpg)
 
-## Technologies Used
-- HTML5
-- CSS3
+**Live site:** https://reynaldonikola.github.io
 
-## Files
-- index.html – Main webpage
-- style.css – Stylesheet for the page
-- README.md – Project description
+## What it lists
 
-## How to View the Website
-You can view the website by opening the `index.html` file in any web browser.
+- Market data platform: Supabase, PostgreSQL, Deno edge functions, scheduled jobs
+- Luna Store catalog: static catalog with client-side search and filters
+- Summit Trails, Rottweiler World and a visitor registration form: front-end coursework, rebuilt in 2026
+- Content automation pipeline: Python and n8n
 
-If hosted with GitHub Pages, you can access it using the provided link.
+## How it is built
 
-## Author
-Reynaldo Moros
+A design system in CSS custom properties, CSS Grid for the project cards, `IntersectionObserver` for scroll reveals, and a nav link that tracks the section on screen. Light and dark both defined; animations turn off under `prefers-reduced-motion`.
+
+```
+index.html
+css/main.css
+js/main.js
+images/
+```

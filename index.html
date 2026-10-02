@@ -1,200 +1,247 @@
-<!DOCTYPE html>
-<!--
-DISCLAIMER / HEADER (paste the exact starter-REPL disclaimer here if your instructor provided one).
--->
-
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Reynaldo Moros Ramos</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reynaldo Moros</title>
+<meta name="description" content="Computer Science student at Utah Valley University. Backend, data pipelines and front-end work, built while working full time.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Reynaldo Moros">
+<meta property="og:description" content="Computer Science student at UVU. Backend, data pipelines and front-end work.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-  <!-- Header and Page Title -->
-  <h1>Reynaldo Moros Ramos</h1>
 
-  <img src="reynaldo.jpg" alt="Photo of Reynaldo Moros Ramos" class="profile-photo">
+<a class="skip" href="#work">Skip to content</a>
 
-  <p>
-    Hi! This is my “About Me” page for Web Programming. I’m a Computer Science student at Utah Valley University,
-    and I’m learning how to build websites using HTML and CSS.
-  </p>
+<div class="glow" aria-hidden="true"></div>
 
-  <!-- Personal Info -->
-  <h2>Personal Info:</h2>
-  <ul>
-    <li><b>Major:</b> Computer Science</li>
-    <li><b>High School:</b> Cristo Rey de Santa Monica (Year: 2009)</li>
-    <li><b>Current year at UVU:</b> Sophomore</li>
-    <li><b>Favorite ice cream:</b> Chocolate</li>
-  </ul>
-
-  <!-- Five Favorite Books -->
-  <h2>My five favorite books</h2>
-  <ol>
-    <li><i>The Lord of the Rings</i>, <a href="https://www.tolkienestate.com/">J. R. R. Tolkien</a></li>
-    <li><i>Harry Potter and the Sorcerer’s Stone</i>, <a href="https://www.jkrowling.com/">J. K. Rowling</a></li>
-    <li><i>The Chronicles of Narnia</i>, <a href="https://www.cslewis.com/">C. S. Lewis</a></li>
-    <li><i>A Wizard of Earthsea</i>, <a href="https://www.ursulakleguin.com/">Ursula K. Le Guin</a></li>
-    <li><i>One Hundred Years of Solitude</i>, <a href="https://gabrielgarciamarquez.com/">Gabriel García Márquez</a></li>
-  </ol>
-
-  <!-- Haiku -->
-  <h2>Roads and Late Nights</h2>
-  <p>
-    I wrote this short poem about balancing work, school, and family, and still finding small moments to enjoy life.
-  </p>
-  <div class="poem">
-    Late shift, quiet roads<br>
-    Homework waits beside warm lights<br>
-    Dreams keep moving on
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="#top">RM</a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
+</header>
 
-  <!-- Brief Essay -->
-  <h2>My personal interests</h2>
+<section class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow fade">Orem, Utah</p>
+    <h1 class="fade">Reynaldo <em>Moros</em></h1>
+    <p class="tagline fade">Computer Science student at Utah Valley University, graduating in 2027. I came into software from accounting and learned to code while working full time, which is why most of what I build is meant to keep running without me watching it.</p>
+    <div class="hero-links fade">
+      <a class="btn" href="#work">See the work</a>
+      <a class="btn ghost" href="https://github.com/reynaldonikola">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/reynaldo-nikola-moros-ramos-02250177">LinkedIn</a>
+    </div>
+    <dl class="facts fade">
+      <div><dt>Focus</dt><dd>Backend, data, automation</dd></div>
+      <div><dt>Languages</dt><dd>Python, SQL, TypeScript, Java, C++</dd></div>
+      <div><dt>Spoken</dt><dd>Spanish and English, daily</dd></div>
+    </dl>
+  </div>
+</section>
 
-  <p>
-    I enjoy programming because it feels like solving puzzles that can actually help people. I like learning how
-    different parts of a computer work together, and I especially like building small projects and seeing them run.
-    When something finally works after debugging, it’s a great feeling.
-  </p>
+<main>
 
-  <p>
-    Another interest of mine is motorcycles. I like the focus and responsibility that comes with riding, and I also
-    enjoy learning about maintenance and safety. Riding clears my head and gives me a break from screens and stress,
-    especially after long work shifts or a heavy week of classes.
-  </p>
+<section id="work" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Selected work</p>
+      <h2>Things I built and kept running</h2>
+    </div>
 
-  <p>
-    I also love spending time with my family and playing video games when I have free time. Family keeps me grounded
-    and motivates me to keep improving myself. Games are fun, but they also remind me how creativity and technology
-    can work together to build amazing experiences.
-  </p>
+    <div class="projects">
 
-  <!-- Class Schedule -->
-  <h2>class schedule</h2>
+      <article class="project reveal">
+        <a class="shot" href="https://monkeylandbtc.com" aria-label="Open the market data platform">
+          <img src="images/data-platform.jpg" alt="Dashboard showing model scores and market data" loading="lazy">
+        </a>
+        <div class="project-body">
+          <div class="project-head">
+            <h3>Market data platform</h3>
+            <span class="tag">Backend</span>
+          </div>
+          <p>A backend on Supabase and PostgreSQL that pulls live pricing from a market API, scores contracts against several models and publishes the results to a public dashboard.</p>
+          <ul class="bullets">
+            <li>20 Deno and TypeScript edge functions, 37 SQL migrations, all scheduled through cron jobs</li>
+            <li>Test suite across 10 files, so scoring logic fails loudly instead of returning quiet bad numbers</li>
+            <li>Traced intermittent production 500s to the SQL view behind the main query and rewrote it</li>
+          </ul>
+          <p class="links"><a href="https://monkeylandbtc.com">Live dashboard</a> <span>Private repository</span></p>
+        </div>
+      </article>
 
-  <table class="schedule" border="1" cellspacing="3" cellpadding="3">
-    <tr>
-      <th></th>
-      <th>Monday</th>
-      <th>Tuesday</th>
-      <th>Wednesday</th>
-      <th>Thursday</th>
-      <th>Friday</th>
-    </tr>
+      <article class="project reveal">
+        <a class="shot" href="https://lunastoremat.com" aria-label="Open the Luna Store catalog">
+          <img src="images/luna-store.jpg" alt="Luna Store catalog home page" loading="lazy">
+        </a>
+        <div class="project-body">
+          <div class="project-head">
+            <h3>Luna Store catalog</h3>
+            <span class="tag">Front-end</span>
+          </div>
+          <p>A product catalog for a small import business in Venezuela, running on a custom domain with a Spanish-language interface that the owner can read and share from a phone.</p>
+          <ul class="bullets">
+            <li>Static site with client-side search and category filters across 58 products</li>
+            <li>Direct WhatsApp handoff from any product, which is how the orders actually arrive</li>
+            <li>Images normalized to one catalog standard, cutting file size roughly in half</li>
+          </ul>
+          <p class="links"><a href="https://lunastoremat.com">lunastoremat.com</a> <a href="https://github.com/reynaldonikola/luna-store-web">Repository</a></p>
+        </div>
+      </article>
 
-    <tr>
-      <td>8:00</td>
-      <td rowspan="2" class="study">Study / Homework</td>
-      <td rowspan="2" class="study">Study / Homework</td>
-      <td rowspan="2" class="study">Study / Homework</td>
-      <td rowspan="2" class="study">Study / Homework</td>
-      <td rowspan="2" class="study">Study / Homework</td>
-    </tr>
-    <tr>
-      <td>8:30</td>
-    </tr>
+      <article class="project reveal">
+        <a class="shot" href="https://reynaldonikola.github.io/summit-trails-responsive-sitegithub.io/" aria-label="Open Summit Trails">
+          <img src="images/summit.jpg" alt="Summit Trails featured trail cards" loading="lazy">
+        </a>
+        <div class="project-body">
+          <div class="project-head">
+            <h3>Summit Trails</h3>
+            <span class="tag">Front-end</span>
+          </div>
+          <p>A responsive hiking guide with a light and dark theme the visitor can switch, built with CSS Grid and Flexbox and no framework.</p>
+          <ul class="bullets">
+            <li>Theme choice stored in <code>localStorage</code>, falling back to the system preference</li>
+            <li>Sections revealed through <code>IntersectionObserver</code>, staggered inside each grid</li>
+            <li>Every animation disabled under <code>prefers-reduced-motion</code></li>
+          </ul>
+          <p class="links"><a href="https://reynaldonikola.github.io/summit-trails-responsive-sitegithub.io/">Live site</a> <a href="https://github.com/reynaldonikola/summit-trails-responsive-sitegithub.io">Repository</a></p>
+        </div>
+      </article>
 
-    <tr>
-      <td>9:00</td>
-      <td rowspan="2" class="math">MATH 1050</td>
-      <td rowspan="3" class="cs">CS 2420</td>
-      <td rowspan="2" class="math">MATH 1050</td>
-      <td rowspan="3" class="cs">CS 2420</td>
-      <td rowspan="2" class="math">MATH 1050</td>
-    </tr>
-    <tr>
-      <td>9:30</td>
-    </tr>
+      <article class="project reveal">
+        <a class="shot" href="https://reynaldonikola.github.io/personal-website-visitor-formgithub.io/" aria-label="Open the visitor form project">
+          <img src="images/travel.jpg" alt="Travel deals home page" loading="lazy">
+        </a>
+        <div class="project-body">
+          <div class="project-head">
+            <h3>Visitor registration form</h3>
+            <span class="tag">JavaScript</span>
+          </div>
+          <p>A single-page travel site whose form is validated entirely in plain JavaScript, with a separate validation library I wrote for it.</p>
+          <ul class="bullets">
+            <li>Required fields, two letter state, zip, phone and email, each with its own message under the field</li>
+            <li>Checks a field when you leave it and again on submit, keeping native form validity in sync</li>
+            <li>Code split into a validation library, a section router and an entry point</li>
+          </ul>
+          <p class="links"><a href="https://reynaldonikola.github.io/personal-website-visitor-formgithub.io/">Live site</a> <a href="https://github.com/reynaldonikola/personal-website-visitor-formgithub.io">Repository</a></p>
+        </div>
+      </article>
 
-    <tr>
-      <td>10:00</td>
-      <td rowspan="2" class="spanish">SPAN 3050</td>
-      <td rowspan="2" class="spanish">SPAN 3050</td>
-      <td rowspan="2" class="spanish">SPAN 3050</td>
-    </tr>
-    <tr>
-      <td>10:30</td>
-      <td rowspan="2" class="commute">Commute / Errands</td>
-      <td rowspan="2" class="commute">Commute / Errands</td>
-    </tr>
+      <article class="project reveal">
+        <a class="shot" href="https://reynaldonikola.github.io/rottweiler-responsive-website/" aria-label="Open Rottweiler World">
+          <img src="images/rottweiler.jpg" alt="Rottweiler World gallery" loading="lazy">
+        </a>
+        <div class="project-body">
+          <div class="project-head">
+            <h3>Rottweiler World</h3>
+            <span class="tag">Front-end</span>
+          </div>
+          <p>A one-page breed site built to practice semantic structure, CSS Grid and motion that does not get in the way.</p>
+          <ul class="bullets">
+            <li>Gallery with a keyboard-accessible lightbox that returns focus when it closes</li>
+            <li>Stat counters that run once, the first time the band enters the viewport</li>
+            <li>Responsive video embed that holds its ratio at any width</li>
+          </ul>
+          <p class="links"><a href="https://reynaldonikola.github.io/rottweiler-responsive-website/">Live site</a> <a href="https://github.com/reynaldonikola/rottweiler-responsive-website">Repository</a></p>
+        </div>
+      </article>
 
-    <tr>
-      <td>11:00</td>
-      <td rowspan="2" class="web">CS 2550</td>
-      <td rowspan="2" class="web">CS 2550</td>
-      <td rowspan="2" class="web">CS 2550</td>
-    </tr>
-    <tr>
-      <td>11:30</td>
-      <td class="study">Study</td>
-      <td class="study">Study</td>
-    </tr>
+      <article class="project reveal no-shot">
+        <div class="project-body">
+          <div class="project-head">
+            <h3>Content automation pipeline</h3>
+            <span class="tag">Automation</span>
+          </div>
+          <p>A Python and n8n pipeline that calls LLM APIs to research products, generate text, image and video content, and publish it across several platforms.</p>
+          <ul class="bullets">
+            <li>Handles what usually breaks a multi-step workflow: rate limits, retries and recovery when a model returns output the next step cannot use</li>
+            <li>Runs unattended on a schedule</li>
+          </ul>
+          <p class="links"><a href="https://github.com/reynaldonikola/affiliate-marketing-automation">Repository</a></p>
+        </div>
+      </article>
 
-    <tr>
-      <td>12:00</td>
-      <td rowspan="2" class="lunch">Lunch</td>
-      <td rowspan="2" class="lunch">Lunch</td>
-      <td rowspan="2" class="lunch">Lunch</td>
-      <td rowspan="2" class="lunch">Lunch</td>
-      <td rowspan="2" class="lunch">Lunch</td>
-    </tr>
-    <tr>
-      <td>12:30</td>
-    </tr>
+    </div>
+  </div>
+</section>
 
-    <tr>
-      <td>1:00</td>
-      <td rowspan="2" class="cs2">CS 2370</td>
-      <td rowspan="2" class="study">Lab / Practice</td>
-      <td rowspan="2" class="cs2">CS 2370</td>
-      <td rowspan="2" class="study">Lab / Practice</td>
-      <td rowspan="2" class="cs2">CS 2370</td>
-    </tr>
-    <tr>
-      <td>1:30</td>
-    </tr>
+<section id="about" class="section alt">
+  <div class="wrap about">
+    <figure class="reveal portrait">
+      <img src="images/portrait.jpg" alt="Reynaldo Moros" loading="lazy">
+    </figure>
+    <div class="reveal">
+      <p class="eyebrow">About</p>
+      <h2>Accounting first, then code</h2>
+      <p>I finished an accounting degree in Venezuela and spent years reconciling records and chasing numbers back to their source. That habit turned out to be the useful part: I check data against where it came from before I trust it, which is most of debugging.</p>
+      <p>Since 2023 I have worked at Nestlé as a maintenance technician, diagnosing equipment while the line is down and people are waiting. I learned to ask questions early instead of sitting on a problem until it gets expensive, and to write down what I did so the next person does not have to guess.</p>
+      <p>I am finishing a Computer Science degree at UVU and looking for an internship where I can learn from people who have been doing this longer than me.</p>
+    </div>
+  </div>
+</section>
 
-    <tr>
-      <td>2:00</td>
-      <td rowspan="2" class="family">Family time</td>
-      <td rowspan="2" class="study">Study</td>
-      <td rowspan="2" class="family">Family time</td>
-      <td rowspan="2" class="study">Study</td>
-      <td rowspan="2" class="family">Family time</td>
-    </tr>
-    <tr>
-      <td>2:30</td>
-    </tr>
+<section id="stack" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Stack</p>
+      <h2>What I work with</h2>
+    </div>
+    <div class="stack">
+      <div class="reveal">
+        <h3>Languages</h3>
+        <p>Python, SQL, JavaScript, TypeScript, Java, C++, HTML and CSS</p>
+      </div>
+      <div class="reveal">
+        <h3>Data and backend</h3>
+        <p>PostgreSQL, Supabase edge functions and row level security, REST API design, schema migrations, scheduled jobs</p>
+      </div>
+      <div class="reveal">
+        <h3>Tools</h3>
+        <p>Git and GitHub, Deno, Node.js, n8n, Cloudflare Pages, Fly.io, AI coding assistants</p>
+      </div>
+      <div class="reveal">
+        <h3>Coursework</h3>
+        <p>Data structures, discrete mathematics, computer networks, web programming, object oriented programming</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <tr>
-      <td>3:00</td>
-      <td rowspan="2" class="commute">Commute</td>
-      <td rowspan="2" class="commute">Commute</td>
-      <td rowspan="2" class="commute">Commute</td>
-      <td rowspan="2" class="commute">Commute</td>
-      <td rowspan="2" class="commute">Commute</td>
-    </tr>
-    <tr>
-      <td>3:30</td>
-    </tr>
+<section id="contact" class="section alt">
+  <div class="wrap contact">
+    <div class="reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Get in touch</h2>
+      <p class="tagline">Open to internships for 2027, in Utah or remote.</p>
+    </div>
+    <ul class="reveal contact-list">
+      <li><span>Email</span> <a href="mailto:11023681@uvu.edu">11023681@uvu.edu</a></li>
+      <li><span>GitHub</span> <a href="https://github.com/reynaldonikola">github.com/reynaldonikola</a></li>
+      <li><span>LinkedIn</span> <a href="https://www.linkedin.com/in/reynaldo-nikola-moros-ramos-02250177">Reynaldo Moros Ramos</a></li>
+      <li><span>Location</span> Orem, Utah</li>
+    </ul>
+  </div>
+</section>
 
-    <tr>
-      <td>4:00</td>
-      <td rowspan="4" class="work">Work</td>
-      <td rowspan="4" class="work">Work</td>
-      <td rowspan="4" class="work">Work</td>
-      <td rowspan="4" class="work">Work</td>
-      <td rowspan="4" class="work">Work</td>
-    </tr>
-    <tr><td>4:30</td></tr>
-    <tr><td>5:00</td></tr>
-    <tr><td>5:30</td></tr>
-  </table>
+</main>
 
-  <p><b>UVU ID:</b> 11023681</p>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <p>Built by hand. HTML, CSS and JavaScript, no framework.</p>
+    <p>Last updated October 2026</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
